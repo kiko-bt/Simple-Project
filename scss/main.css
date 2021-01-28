@@ -1,0 +1,298 @@
+.container {
+  max-width: 1370px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  transition: all 0.4s;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #d9cba6; }
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #b4887d; }
+
+@media (max-width: 500px) {
+  #main-nav ul li a {
+    font-size: 1.5rem;
+    margin-left: 0.8rem; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lora", serif;
+  line-height: 1.3;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.6rem;
+  background: #dbdbdb;
+  font-size: 1.2rem; }
+  #main-nav #logo {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-transform: uppercase; }
+  #main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px; }
+  #main-nav li a {
+    padding: 0.8rem; }
+    #main-nav li a:hover {
+      background: #e2cbc5;
+      color: #333;
+      border-radius: 5px; }
+
+#home {
+  height: 100vh;
+  color: #fff;
+  background: url("../img/b1e86c00c49911a87decbaa06ef6d273.jpg") no-repeat center right/cover; }
+  #home .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20%; }
+    #home .header-content #header-logo {
+      width: 180px;
+      height: 140px; }
+    #home .header-content #sara {
+      width: 1000px;
+      height: 460px;
+      margin-left: 200px; }
+    #home .header-content h1 {
+      font-size: 160px;
+      padding-bottom: 5rem;
+      background-image: linear-gradient(to right, #f1c96b, #fff9d1, #ece2b1, #f3e412);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.2);
+      animation: text 3s 1; }
+    #home .header-content .lead {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 50px;
+      color: #eed961; }
+@keyframes text {
+  0% {
+    margin-bottom: -5rem;
+    font-size: 3rem; }
+  30% {
+    margin-bottom: -3rem;
+    letter-spacing: 2rem;
+    font-size: 3rem; } }
+.what {
+  font-size: 2rem;
+  background-color: #f4f4f4; }
+  .what .text-primary {
+    color: #d9cba6;
+    font-size: larger; }
+  .what .about {
+    margin-top: 1rem;
+    font-size: 1rem; }
+
+.weDo {
+  background-color: #f4f4f4; }
+  .weDo .services {
+    text-align: center;
+    font-size: 2rem; }
+  .weDo .accordion {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto; }
+    .weDo .accordion .accordion-item {
+      background-color: #fff;
+      color: #111;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); }
+      .weDo .accordion .accordion-item .accordion-item-header {
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        min-height: 3.5rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer; }
+        .weDo .accordion .accordion-item .accordion-item-header::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f358";
+          font-size: 2rem;
+          position: absolute;
+          right: 1rem; }
+        .weDo .accordion .accordion-item .accordion-item-header.active::after {
+          transform: rotate(180deg); }
+      .weDo .accordion .accordion-item .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out; }
+        .weDo .accordion .accordion-item .accordion-item-body-content {
+          display: flex;
+          flex-direction: row-reverse;
+          padding: 1rem 1rem;
+          line-height: 1.5rem;
+          border-top: 2px solid;
+          border-image: linear-gradient(to right, #e0aa3e, transparent) 1; }
+        .weDo .accordion .accordion-item .accordion-item-body #aboutMicropigmentation {
+          height: 160px;
+          width: 140px; }
+
+.productsAwards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 1rem 1.5rem; }
+  .productsAwards i {
+    color: rgba(224, 170, 62, 0.8); }
+  .productsAwards h4 {
+    font-size: 1.3rem;
+    padding: 1rem; }
+
+.carousel-container {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  border: 2px solid #e0aa3e;
+  overflow: hidden; }
+  .carousel-container .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 500px; }
+  .carousel-container #prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer; }
+  .carousel-container #nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer; }
+
+.wrapper {
+  position: relative;
+  padding: 1.5rem 20rem 3.5rem 3.5rem;
+  background: #f4f4f4; }
+  .wrapper #contact-form {
+    max-width: 875px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 10px; }
+    .wrapper #contact-form .input-fields {
+      display: flex;
+      flex-direction: column;
+      margin-right: 4%; }
+    .wrapper #contact-form .input-fields,
+    .wrapper #contact-form .message {
+      width: 50%; }
+    .wrapper #contact-form .input-fields input,
+    .wrapper #contact-form .message textarea {
+      margin: 10px 0;
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid #e0aa3e;
+      padding: 10px;
+      color: #e0aa3e;
+      width: 100%; }
+    .wrapper #contact-form .message textarea {
+      height: 200px; }
+    .wrapper #contact-form ::-webkit-input-placeholder {
+      color: #c5ecfd; }
+    .wrapper #contact-form ::-ms-webkit-input-placeholder {
+      color: #c5ecfd; }
+  .wrapper #btn {
+    position: absolute;
+    top: 70%;
+    text-transform: uppercase; }
+  .wrapper #form-logo {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: -15px;
+    right: -265px; }
+
+#main-footer {
+  text-align: center;
+  background: #333;
+  color: #f4f4f4;
+  padding: 30px; }
+  #main-footer .icon-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5rem; }
+  #main-footer li {
+    list-style: none;
+    padding: 0.6rem 0.5rem;
+    margin: 0.4rem 2.5rem; }
+  #main-footer i.fab {
+    color: royalblue;
+    padding: 0 0.8rem; }
+    #main-footer i.fab.fa-instagram {
+      color: #5147e4; }
+
+/*# sourceMappingURL=main.css.map */
